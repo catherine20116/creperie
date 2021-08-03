@@ -1,0 +1,71 @@
+span {
+    color: var(--gold-color);
+    font-weight: 900;
+}
+
+#menu-banner {
+    margin-top: 95px;
+    background-image: url('/img/our-menu/What-You-Should-Know-About-Restaurant-Menu-Designs-01.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70%;
+    font-size: 3rem;
+    border-bottom: 2px solid var(--gold-color);
+}
+
+#menu-banner-color {
+    background-color: rgba(248, 247, 216, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#menu-banner p1 {
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid var(--gold-color);
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+.menu-item img {
+    width: 50%;
+}
+
+form {
+    margin-bottom: 20px;
+    padding-top: 5%;
+}
+
+input {
+    border: 1px solid var(--gold-color);
+}
+
+#add-to-order1 {
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 3px solid var(--gold-color);
+    padding: 10px;
+    border-style: double;
+}
+
+#place-for-added-item1 {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

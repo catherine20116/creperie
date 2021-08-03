@@ -24,7 +24,7 @@ span {
     text-align: center;
 }
 
-#menu-banner p1 {
+#menu-banner p {
     font-size: 2rem;
 }
 
@@ -98,7 +98,7 @@ input {
     font-weight: 900;
 }
 
-#menu-summary-section-container p1 {
+#menu-summary-section-container p {
     margin-bottom: 10px;
     display: block;
     font-size: 1.1rem;

@@ -72,6 +72,7 @@ p {
     justify-content: center;
     height: 35%;
     font-size: larger;
+    height: 50%;
 }
 
 .container {
@@ -113,6 +114,7 @@ p {
     font-size: larger;
     background-image: url('./img/explore-menu/sacwjo2x6nvxsvicjhdp9zso93kpgvgz7xqrpqqictcijhwc32jdfyjgliwqhgj7-.jpg');
     background-position: center;
+    height: 50%;
 }
 
 /*explore location*/
@@ -125,6 +127,7 @@ p {
     justify-content: center;
     height: 35%;
     font-size: larger;
+    height: 50%;
 }
 
 /*bottom banner*/
@@ -159,4 +162,10 @@ p {
     background-color: white;
     font-size: larger;
     justify-content: center;
+}
+
+/*Mobile Adj*/
+
+@media screen and (max-width: 768px) {
+    
 }

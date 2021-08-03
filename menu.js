@@ -13,7 +13,7 @@ let westernPrice = 8;
 
 /*GM*/
 let newElement1 = document.createElement('div');
-newElement1.innerHTML = '<p1>The Item Is Added to Your Order</p1>';
+newElement1.innerHTML = '<p>The Item Is Added to Your Order</p>';
 let afterItem1 = document.getElementById('place-for-added-item1');
 newElement1.style.width='45%';
 newElement1.style.border = '3px solid var(--gold-color)';
@@ -24,7 +24,7 @@ newElement1.style.fontSize = 'large';
 
 /*Fresh*/
 let newElement2 = document.createElement('div');
-newElement2.innerHTML = '<p1>The Item Is Added to Your Order</p1>';
+newElement2.innerHTML = '<p>The Item Is Added to Your Order</p>';
 let afterItem2 = document.getElementById('place-for-added-item2');
 newElement2.style.width='45%';
 newElement2.style.border = '3px solid var(--gold-color)';
@@ -35,7 +35,7 @@ newElement2.style.fontSize = 'large';
 
 /*Florentine*/
 let newElement3 = document.createElement('div');
-newElement3.innerHTML = '<p1>The Item Is Added to Your Order</p1>';
+newElement3.innerHTML = '<p>The Item Is Added to Your Order</p>';
 let afterItem3 = document.getElementById('place-for-added-item3');
 newElement3.style.width='45%';
 newElement3.style.border = '3px solid var(--gold-color)';
@@ -46,7 +46,7 @@ newElement3.style.fontSize = 'large';
 
 /*Garden*/
 let newElement4 = document.createElement('div');
-newElement4.innerHTML = '<p1>The Item Is Added to Your Order</p1>';
+newElement4.innerHTML = '<p>The Item Is Added to Your Order</p>';
 let afterItem4 = document.getElementById('place-for-added-item4');
 newElement4.style.width='45%';
 newElement4.style.border = '3px solid var(--gold-color)';
@@ -57,7 +57,7 @@ newElement4.style.fontSize = 'large';
 
 /*HamCheese*/
 let newElement5 = document.createElement('div');
-newElement5.innerHTML = '<p1>The Item Is Added to Your Order</p1>';
+newElement5.innerHTML = '<p>The Item Is Added to Your Order</p>';
 let afterItem5 = document.getElementById('place-for-added-item5');
 newElement5.style.width='45%';
 newElement5.style.border = '3px solid var(--gold-color)';
@@ -68,7 +68,7 @@ newElement5.style.fontSize = 'large';
 
 /*Western*/
 let newElement6 = document.createElement('div');
-newElement6.innerHTML = '<p1>The Item Is Added to Your Order</p1>';
+newElement6.innerHTML = '<p>The Item Is Added to Your Order</p>';
 let afterItem6 = document.getElementById('place-for-added-item6');
 newElement6.style.width='45%';
 newElement6.style.border = '3px solid var(--gold-color)';
@@ -81,7 +81,7 @@ newElement6.style.fontSize = 'large';
 /*Price Box*/
 
 /*GM*/
-let priceElementGM = document.createElement('p1');
+let priceElementGM = document.createElement('p');
 priceElementGM.innerHTML = `${GMPrice} EUR`;
 priceElementGM.style.width='45%';
 priceElementGM.style.border = '3px solid var(--gold-color)';
@@ -93,7 +93,7 @@ let PriceGMAfterItem = document.getElementById('GM-price-place');
 PriceGMAfterItem.append(priceElementGM);
 
 /*Fresh*/
-let priceElementFresh = document.createElement('p1');
+let priceElementFresh = document.createElement('p');
 priceElementFresh.innerHTML = `${freshPrice} EUR`;
 priceElementFresh.style.width='45%';
 priceElementFresh.style.border = '3px solid var(--gold-color)';
@@ -105,7 +105,7 @@ let PriceFreshAfterItem = document.getElementById('Fresh-price-place');
 PriceFreshAfterItem.append(priceElementFresh);
 
 /*Florentine*/
-let priceElementFlorentine = document.createElement('p1');
+let priceElementFlorentine = document.createElement('p');
 priceElementFlorentine.innerHTML = `${florentinePrice} EUR`;
 priceElementFlorentine.style.width='45%';
 priceElementFlorentine.style.border = '3px solid var(--gold-color)';
@@ -117,7 +117,7 @@ let PriceFlorentineAfterItem = document.getElementById('Florentine-price-place')
 PriceFlorentineAfterItem.append(priceElementFlorentine);
 
 /*Garden*/
-let priceElementGarden = document.createElement('p1');
+let priceElementGarden = document.createElement('p');
 priceElementGarden.innerHTML = `${gardenPrice} EUR`;
 priceElementGarden.style.width='45%';
 priceElementGarden.style.border = '3px solid var(--gold-color)';
@@ -129,7 +129,7 @@ let PriceGardenAfterItem = document.getElementById('Garden-price-place');
 PriceGardenAfterItem.append(priceElementGarden);
 
 /*HamCheese*/
-let priceElementHamCheese = document.createElement('p1');
+let priceElementHamCheese = document.createElement('p');
 priceElementHamCheese.innerHTML = `${hamcheesePrice} EUR`;
 priceElementHamCheese.style.width='45%';
 priceElementHamCheese.style.border = '3px solid var(--gold-color)';
@@ -141,7 +141,7 @@ let PriceHamCheeseAfterItem = document.getElementById('HamCheese-price-place');
 PriceHamCheeseAfterItem.append(priceElementHamCheese);
 
 /*Western*/
-let priceElementWestern = document.createElement('p1');
+let priceElementWestern = document.createElement('p');
 priceElementWestern.innerHTML = `${westernPrice} EUR`;
 priceElementWestern.style.width='45%';
 priceElementWestern.style.border = '3px solid var(--gold-color)';

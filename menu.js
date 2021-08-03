@@ -278,8 +278,6 @@ let addValues4 = eventTarget4.addEventListener('click', getValue1);
 let addValues5 = eventTarget5.addEventListener('click', getValue1);
 let addValues6 = eventTarget6.addEventListener('click', getValue1);
 
-
-
 /*
 eventTarget1.onclick = getValue;
 eventTarget2.onclick = getValue;

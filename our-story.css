@@ -63,3 +63,36 @@ span {
     margin-left: 5%;
     width: 20%;
 }
+
+#container-text-right-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 766px) {
+    #story-banner {
+        margin-top: 30px;
+    }
+
+
+    .story-container {
+        margin-bottom: 5%;
+        
+        text-align: center;
+        height: 35%;
+    }
+
+    .img-container {
+        display: none;
+    }
+
+    .container-text-left {
+        width: 100%;
+    }
+
+    .container-text-right {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+}

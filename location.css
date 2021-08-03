@@ -3,6 +3,14 @@ span {
     font-weight: 900;
 }
 
+h1 {
+    margin-bottom: 25px;
+}
+
+#h1-italic {
+    margin-top: 20px;
+}
+
 #menu-banner {
     margin-top: 95px;
     background-image: url('./img/our-story/our\ story.jpeg');
@@ -34,8 +42,15 @@ span {
     justify-content: center;
 }
 
-.google-maps h1 {
+.google-maps h3 {
     font-family: var(--caps-buttons-and-text);
     font-weight: 900;
     font-size: 2rem;
+}
+
+@media screen and (max-width: 766px) {
+    #menu-banner {
+        margin-top: 30px;
+    }
+
 }

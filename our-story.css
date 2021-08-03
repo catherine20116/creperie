@@ -6,7 +6,7 @@ span {
 
 #story-banner {
     margin-top: 95px;
-    background-image: url('/img/our-story/banner-03.jpg');
+    background-image: url('./img/our-story/banner-03.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

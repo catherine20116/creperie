@@ -54,7 +54,9 @@ input {
     border: 1px solid var(--gold-color);
 }
 
-#add-to-order1 {
+/*Item1*/
+
+.add-to-order {
     background-color: white;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -69,9 +71,58 @@ input {
     padding: 10px;
 }
 
-#place-for-added-item1 {
+.place-for-added-item {
     height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.price-place {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Menu Summary*/
+#Menu-summary {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--gold-color);
+}
+
+#Menu-summary h1 {
+    font-family: var(--caps-buttons-and-text);
+    font-size: x-large;
+    text-align: center;
+    font-weight: 900;
+}
+
+#menu-summary-section-container p1 {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 1.1rem;
+}
+
+#menu-summary-section {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#totalPriceToPay {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+#order-button {
+    text-align: center;
+    font-family: var(--cursiv-buttons);
+    font-size: x-large;
+}
+
+#order-button a {
+    color: var(--text-color);
 }

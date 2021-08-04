@@ -41,7 +41,7 @@
                 <label for='name'></label>
                 <input type='text' name='name' class='name-email' placeholder='Name'>
                 <label for='email'></label>
-                <input type='text' name='email' class='name-email' placeholder='Email'>
+                <input id='email' type='text' name='email' class='name-email' placeholder='Email' pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address">
                 <br>
                 <label for="message"></label>
                 <textarea id='textarea' name='message' rows='10' cols="100" placeholder='Message'></textarea>

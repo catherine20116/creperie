@@ -47,6 +47,10 @@
     color: grey;
 }
 
+#email:invalid {
+    background-color: pink;
+  }
+
 textarea {
     border: 2px solid var(--gold-color);
     width: 60.2%;

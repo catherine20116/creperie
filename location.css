@@ -1,4 +1,4 @@
-span {
+.site-menu span {
     color: var(--gold-color);
     font-weight: 900;
 }
@@ -33,6 +33,7 @@ h1 {
 }
 
 #menu-banner p {
+    margin-top: 30px;
     font-size: 2rem;
 }
 

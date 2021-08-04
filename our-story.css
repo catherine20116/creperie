@@ -1,4 +1,4 @@
-span {
+.site-menu span {
     color: var(--gold-color);
     font-weight: 900;
 }
@@ -26,6 +26,7 @@ span {
 }
 
 #story-banner p {
+    margin-top: 30px;
     font-size: 2rem;
 }
 
@@ -48,9 +49,14 @@ span {
     max-width: 400px;
 }
 
-.container-text-left {
+.container-text-left, .container-text-right {
     margin-right: 5%;
     width: 20%;
+}
+
+.container-text-left h2, .container-text-right h2{
+    margin-bottom: 20px;
+    color: var(--text-color)
 }
 
 .img-container {

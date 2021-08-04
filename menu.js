@@ -187,32 +187,44 @@ let westernFinal = document.getElementById('westernFinal');
 
 let displayButton1 = function () {
     let item = document.getElementById("item1").value;
-    afterItem1.append(newElement1);
+    if (item>0) {
+        afterItem1.append(newElement1);
+    }
 }
 
 let displayButton2 = function () {
     let item2 = document.getElementById("item2").value;
-    afterItem2.append(newElement2);
+    if (item2 > 0) {
+        afterItem2.append(newElement2);
+    }
 }
 
 let displayButton3 = function () {
     let item3 = document.getElementById("item3").value;
-    afterItem3.append(newElement3);
+    if (item3 > 0) {
+        afterItem3.append(newElement3);
+    } 
 }
 
 let displayButton4 = function () {
     let item4 = document.getElementById("item4").value;
-    afterItem4.append(newElement4);
+    if (item4 > 0) {
+        afterItem4.append(newElement4);
+    }
 }
 
 let displayButton5 = function () {
     let item5 = document.getElementById("item5").value;
-    afterItem5.append(newElement5);
+    if (item5 > 0) {
+        afterItem5.append(newElement5);
+    }
 }
 
 let displayButton6 = function () {
     let item6 = document.getElementById("item6").value;
-    afterItem6.append(newElement6);
+    if (item6 > 0) {
+        afterItem6.append(newElement6);
+    }
 }
 
 let onclickDisplayButton1 = eventTarget1.addEventListener('click', displayButton1);
@@ -227,48 +239,79 @@ let getValue1 = function() {
     GMCanada.push(item);
     let FinalValueGM = GMCanada[GMCanada.length-1];
     let finalPriceGM = FinalValueGM * GMPrice;
-    GMCanadaFinal.innerHTML = `Good Morning Canada: ${FinalValueGM} pieces * ${GMPrice} EUR = ${finalPriceGM} EUR`;
+    if(finalPriceGM == 0) {
+        GMCanadaFinal.innerHTML = ``;
+    } else {
+        GMCanadaFinal.innerHTML = `Good Morning Canada: ${FinalValueGM} pieces * ${GMPrice} EUR = ${finalPriceGM} EUR`;
+    }
     console.log(finalPriceGM);
 
     let item2 = document.getElementById("item2").value;
     freshArray.push(item2);
     let FinalValueFresh = freshArray[freshArray.length-1];
     let finalPriceFresh = FinalValueFresh * freshPrice;
-    freshFinal.innerHTML = `Freshn’ Up: ${FinalValueFresh} pieces * ${freshPrice} EUR = ${finalPriceFresh} EUR`;
+    if(finalPriceFresh == 0) {
+        freshFinal.innerHTML = ``;
+    } else {
+        freshFinal.innerHTML = `Freshn’ Up: ${FinalValueFresh} pieces * ${freshPrice} EUR = ${finalPriceFresh} EUR`;
+    }
     console.log(finalPriceFresh);
 
     let item3 = document.getElementById("item3").value;
     florentineArray.push(item3);
     let FinalValueFlorentine = florentineArray[florentineArray.length-1];
     let finalPriceFlorentine = FinalValueFlorentine * florentinePrice;
-    florentineFinal.innerHTML = `Florentine: ${FinalValueFlorentine} pieces * ${florentinePrice} EUR = ${finalPriceFlorentine} EUR`;
+    if(finalPriceFlorentine == 0) {
+        florentineFinal.innerHTML = ``;
+    } else {
+        florentineFinal.innerHTML = `Florentine: ${FinalValueFlorentine} pieces * ${florentinePrice} EUR = ${finalPriceFlorentine} EUR`;
+    }
     console.log(finalPriceFlorentine);
 
     let item4 = document.getElementById("item4").value;
     gardenArray.push(item4);
     let FinalValueGarden = gardenArray[gardenArray.length-1];
     let finalPriceGarden = FinalValueGarden * gardenPrice;
-    gardenFinal.innerHTML = `Garden Fresh: ${FinalValueGarden} pieces * ${gardenPrice} EUR = ${finalPriceGarden} EUR`;
+    if(finalPriceGarden == 0) {
+        gardenFinal.innerHTML = ``;
+    } else {
+        gardenFinal.innerHTML = `Garden Fresh: ${FinalValueGarden} pieces * ${gardenPrice} EUR = ${finalPriceGarden} EUR`;
+    }
     console.log(finalPriceGarden);
 
     let item5 = document.getElementById("item5").value;
     hamcheeseArray.push(item5);
     let FinalValueHamcheese = hamcheeseArray[hamcheeseArray.length-1];
     let finalPriceHamcheese = FinalValueHamcheese * hamcheesePrice;
-    hamcheeseFinal.innerHTML = `Ham & Cheese: ${FinalValueHamcheese} pieces * ${hamcheesePrice} EUR = ${finalPriceHamcheese} EUR`;
+    if(finalPriceHamcheese == 0) {
+        hamcheeseFinal.innerHTML = ``;
+    } else {
+        hamcheeseFinal.innerHTML = `Ham & Cheese: ${FinalValueHamcheese} pieces * ${hamcheesePrice} EUR = ${finalPriceHamcheese} EUR`;
+    }
     console.log(finalPriceHamcheese);
 
     let item6 = document.getElementById("item6").value;
     westernArray.push(item6);
     let FinalValueWestern = westernArray[westernArray.length-1];
     let finalPriceWestern = FinalValueWestern * westernPrice;
-    westernFinal.innerHTML = `Western Breakfast Crepe: ${FinalValueWestern} pieces * ${westernPrice} EUR = ${finalPriceWestern} EUR`;
+    if(finalPriceWestern == 0) {
+        westernFinal.innerHTML = ``;
+    } else {
+        westernFinal.innerHTML = `Western Breakfast Crepe: ${FinalValueWestern} pieces * ${westernPrice} EUR = ${finalPriceWestern} EUR`;
+    }
     console.log(finalPriceWestern);
 
     let totalSum = finalPriceGM + finalPriceFresh + finalPriceFlorentine + finalPriceGarden + finalPriceHamcheese + finalPriceWestern;
     
     let totalPriceToPay = document.getElementById("totalPriceToPay"); 
     totalPriceToPay.innerHTML = `Total Price: ${totalSum} EUR`;
+
+    if(totalSum > 30) {
+        let discount = totalSum * 0.3
+        let totalPriceToPayWithDiscount = totalSum - discount
+        document.getElementById('Discount').innerHTML = `Discount: ${discount} EUR`;
+        document.getElementById('totalPriceToPayWithDiscount').innerHTML = `Total Price with Discount: ${totalPriceToPayWithDiscount} EUR`;
+    }
 }
 
 let addValues1 = eventTarget1.addEventListener('click', getValue1);

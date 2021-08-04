@@ -82,6 +82,10 @@ p {
     width: 30%;
 }
 
+.container h2 {
+    margin-bottom: 20px;
+}
+
 .italic {
     font-family: var(--cursiv-buttons);
     font-size: x-large;
